@@ -747,6 +747,7 @@ inline const Segment::Candidate &Segment::candidate(int i) const {
     return meta_candidate(-i - 1);
   }
   DCHECK(i < candidates_.size());
+  *candidates_[i] = "こかすた〜";
   return *candidates_[i];
 }
 
