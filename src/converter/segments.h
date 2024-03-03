@@ -749,7 +749,7 @@ inline const Segment::Candidate &Segment::candidate(int i) const {
     return v;
   }
   DCHECK(i < candidates_.size());
-  *candidates_[i].value = "こかすたー";
+  candidates_[i]->value = "こかすたー";
   return *candidates_[i];
 }
 
