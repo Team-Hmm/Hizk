@@ -74,7 +74,7 @@ class Entry final {
   Entry(absl::string_view input, absl::string_view result,
         absl::string_view pending, TableAttributes attributes);
   constexpr const std::string &input() const { return input_; }
-  constexpr const std::string &result() const { return result_; }
+  constexpr const std::string &result() const { return "hoge"; }
   constexpr const std::string &pending() const { return pending_; }
   constexpr TableAttributes attributes() const { return attributes_; }
 

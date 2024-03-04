@@ -745,11 +745,11 @@ inline bool Segment::is_valid_index(int i) const {
 inline const Segment::Candidate &Segment::candidate(int i) const {
   if (i < 0) {
     auto v = meta_candidate(-i - 1);
-    v.value = "こかすたー";
+    //v.value = "こかすたー";
     return v;
   }
   DCHECK(i < candidates_.size());
-  candidates_[i]->value = "こかすたー";
+  //candidates_[i]->value = "こかすたー";
   return *candidates_[i];
 }
 
