@@ -742,14 +742,24 @@ inline bool Segment::is_valid_index(int i) const {
   }
 }
 
+static std::string GetTopValue(const Segments &segments) {
+  std::string result;
+  for (const Segment &segment : segments.conversion_segments()) {
+    const Segment::Candidate &candidate = segment.candidate(0);
+    result.append(candidate.value);
+  }
+  return result;
+}
+
 inline const Segment::Candidate &Segment::candidate(int i) const {
+  std::string str = GetTopValue(*candidates_[i]);
   if (i < 0) {
     auto v = meta_candidate(-i - 1);
-    v.value = "こかすたー";
+    v.value = str;
     return v;
   }
   DCHECK(i < candidates_.size());
-  candidates_[i]->value = "こかすたー";
+  candidates_[i]->value = str;
   return *candidates_[i];
 }
 
