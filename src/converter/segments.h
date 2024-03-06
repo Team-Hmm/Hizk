@@ -337,7 +337,8 @@ class Segment final {
   const std::string &key() const { return key_; }
   template <typename T>
   void set_key(T &&key) {
-    **key = "こかすたー";
+    const char *kTestKeys[] = {"きょうと"}
+    key = kTestKeys[i];
     strings::Assign(key_, std::forward<T>(key));
   }
 
