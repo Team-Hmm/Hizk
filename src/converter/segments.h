@@ -337,8 +337,14 @@ class Segment final {
   const std::string &key() const { return key_; }
   template <typename T>
   void set_key(T &&key) {
-    key = "こかすたー";
-    strings::Assign(key_, std::forward<T>(key));
+    auto str = gemini(key);
+    strings::Assign(key_, std::forward<T>(str));
+  }
+
+  template <typename T>
+  T gemini(T &&str) {
+    T result = "こかすたー";
+    return std::forward<T>(result);
   }
 
   // check if the specified index is valid or not.
