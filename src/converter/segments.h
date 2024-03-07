@@ -337,7 +337,7 @@ class Segment final {
   const std::string &key() const { return key_; }
   template <typename T>
   void set_key(T &&key) {
-    std::string &&str = "こかすた〜";
+    std::string &&str = "このように、漢字の文章が入っているといったいどうなるのでしょうか";
     strings::Assign(key_, std::forward<std::string&&>(str));
   }
 
