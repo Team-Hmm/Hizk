@@ -63,8 +63,7 @@ mozc_cc_library(
         "-lssl",
         "-lcrypto",
         "-pthread",
-        "-D CPPHTTPLIB_OPENSSL_SUPPORT
-        "
+        "-D CPPHTTPLIB_OPENSSL_SUPPORT"
     ]
 )
 
