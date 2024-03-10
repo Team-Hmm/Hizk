@@ -1,5 +1,5 @@
 cc_library(
-    name = "cpp-httplib",
+    name = "httplib",
     hdrs = ["httplib.h"],
     defines = ["CPPHTTPLIB_OPENSSL_SUPPORT"],
     visibility = ["//visibility:public"],
