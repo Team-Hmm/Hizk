@@ -66,6 +66,7 @@ mozc_cc_library(
         "//protocol:config_cc_proto",
         "//testing:friend_test",
         "//transliteration",
+        "//third_party/cpp-httplib:httplib",
         "@com_google_absl//absl/hash",
         "@com_google_absl//absl/strings",
         "@com_google_absl//absl/time",
