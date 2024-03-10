@@ -59,6 +59,13 @@ mozc_cc_library(
         "@com_google_absl//absl/strings",
         "@com_google_absl//absl/strings:str_format",
     ],
+    copts = [
+        "-lssl",
+        "-lcrypto",
+        "-pthread",
+        "-D CPPHTTPLIB_OPENSSL_SUPPORT
+        "
+    ]
 )
 
 mozc_cc_test(
