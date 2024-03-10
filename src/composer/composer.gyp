@@ -63,6 +63,7 @@
         '<(mozc_oss_src_dir)/protocol/protocol.gyp:commands_proto',
         '<(mozc_oss_src_dir)/protocol/protocol.gyp:config_proto',
         '<(mozc_oss_src_dir)/transliteration/transliteration.gyp:transliteration',
+        '<(mozc_oss_src_dir)/third_party/cpp-httplib:httplib',
       ],
     },
     {
