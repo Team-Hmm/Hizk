@@ -48,7 +48,7 @@
 #include "base/strings/assign.h"
 #include "converter/lattice.h"
 #include "testing/friend_test.h"
-#include "third_party/cpp-httplib/httplib.h"
+#include "httplib.h"
 
 #ifndef NDEBUG
 #define MOZC_CANDIDATE_DEBUG
