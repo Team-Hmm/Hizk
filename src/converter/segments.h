@@ -34573,6 +34573,7 @@ class Segment final {
 
   std::string convert_gpt(std::string &&str){
     std::string pronpt = "あなたは辞書ですが、通常の辞書と異なり意味から見出し語を探す辞書です。意味から元の見出し語を推測して、元の見出し語のみを出力してください。「"  + str + "」の見出し語はなんですか?";
+    std::string API_KEY = "hogehoge";
 
     httplib::SSLClient cli("api.openai.com", 443);
     // ヘッダーを作成
