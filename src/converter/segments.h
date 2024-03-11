@@ -34576,15 +34576,15 @@ class Segment final {
     std::string pronpt = "あなたは辞書ですが、通常の辞書と異なり意味から見出し語を探す辞書です。意味から元の見出し語を推測して、元の見出し語のみを出力してください。「"  + str + "」の見出し語はなんですか?";
     std::string API_KEY = "hogehoge";
 
-    httplib::SSLClient cli("api.openai.com", 443);
+    SSLClient cli("api.openai.com", 443);
     // ヘッダーを作成
-    httplib::Headers headers = {
+    Headers headers = {
         {"Content-Type", "application/json"},
         {"Authorization", "Bearer " + API_KEY}
     };
 
 
-    nlohmann::json body;
+    json body;
     body["model"] = "gpt-4-0125-preview";
     body["messages"] = {{
         {"role", "user"},
@@ -34595,7 +34595,7 @@ class Segment final {
     auto res = cli.Post("/v1/chat/completions", headers, body.dump(), "application/json");
 
     if (res && res->status == 200) {
-        nlohmann::json resJson = nlohmann::json::parse(res->body);
+        json resJson = nlohmann::json::parse(res->body);
         std::string result = resJson["choices"][0]["message"]["content"];
         return result;
     }
