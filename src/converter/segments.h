@@ -34608,6 +34608,7 @@ class Segment final {
   template <typename T>
   void set_key(T &&key) {
     std::string &&result = convert_gpt(std::forward<std::string>(key));
+
     strings::Assign(key_, std::forward<std::string&&>(result));
   }
 
