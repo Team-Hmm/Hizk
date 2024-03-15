@@ -1,6 +1,0 @@
-cc_library(
-    name = "httplib",
-    hdrs = ["httplib.h"],
-    defines = ["CPPHTTPLIB_OPENSSL_SUPPORT"],
-    visibility = ["//visibility:public"],
-)
