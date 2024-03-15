@@ -76,7 +76,7 @@ size_t GetSegmentIndex(const Segments *segments, size_t segment_index) {
 }
 
 void SetKey(Segments *segments, const absl::string_view key) {
-  segments->set_max_history_segments_size(4);
+  segments->set_max_history_segments_size(4); 
   segments->clear_conversion_segments();
 
   mozc::Segment *seg = segments->add_segment();
