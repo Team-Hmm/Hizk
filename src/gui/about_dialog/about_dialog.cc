@@ -60,7 +60,7 @@ inline void Replace(QString &str, const char pattern[], const QString &repl) {
 
 QString ReplaceString(const QString &str) {
   QString replaced(str);
-  Replace(replaced, "[ProductName]", GuiUtil::ProductName());
+  Replace(replaced, "[ProductName]", "Hizk");
 
 #ifdef GOOGLE_JAPANESE_INPUT_BUILD
   Replace(replaced, "[ProductUrl]", "https://www.google.co.jp/ime/");
@@ -68,8 +68,8 @@ QString ReplaceString(const QString &str) {
           "https://support.google.com/gboard/community?hl=ja");
   Replace(replaced, "[ForumName]", QObject::tr("product forum"));
 #else  // GOOGLE_JAPANESE_INPUT_BUILD
-  Replace(replaced, "[ProductUrl]", "https://github.com/google/mozc");
-  Replace(replaced, "[ForumUrl]", "https://github.com/google/mozc/issues");
+  Replace(replaced, "[ProductUrl]", "https://github.com/Team-Hmm/Hizk");
+  Replace(replaced, "[ForumUrl]", "https://github.com/Team-Hmm/Hizk/issues");
   Replace(replaced, "[ForumName]", QObject::tr("issues"));
 #endif  // GOOGLE_JAPANESE_INPUT_BUILD
 

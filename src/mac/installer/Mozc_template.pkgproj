@@ -580,7 +580,7 @@
 				<key>IDENTIFIER</key>
 				<string>org.mozc.pkg.JapaneseInput</string>
 				<key>NAME</key>
-				<string>Mozc</string>
+				<string>Hizk</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -763,7 +763,7 @@
 						<key>LANGUAGE</key>
 						<string>English</string>
 						<key>VALUE</key>
-						<string>Mozc</string>
+						<string>Hizk</string>
 					</dict>
 				</array>
 			</dict>
@@ -794,7 +794,7 @@
 							<key>LANGUAGE</key>
 							<string>English</string>
 							<key>VALUE</key>
-							<string>Mozc requires macOS 11 or later.</string>
+							<string>Hizk does not support MacOS.</string>
 						</dict>
 						<dict>
 							<key>LANGUAGE</key>
@@ -802,7 +802,7 @@
 							<key>SECONDARY_VALUE</key>
 							<string></string>
 							<key>VALUE</key>
-							<string>Mozc は macOS 11 以降で動作します。</string>
+							<string>HizkはMacOSをサポートしません</string>
 						</dict>
 					</array>
 					<key>NAME</key>
@@ -986,7 +986,7 @@
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>Mozc</string>
+			<string>Hizk</string>
 		</dict>
 	</dict>
 	<key>TYPE</key>

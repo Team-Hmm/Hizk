@@ -23,7 +23,7 @@ Choose one of them
 2. macOS build
    + https://github.com/google/mozc/blob/master/docs/build_mozc_in_osx.md
 3. Windows build
-   + https://github.com/google/mozc/blob/master/docs/build_mozc_in_windows.md
+   + https://github.com/Team-Hmm/Hizk/blob/master/docs/build_mozc_in_windows.md
 4. Others (no guarantee)
 
 

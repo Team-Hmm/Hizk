@@ -34,7 +34,7 @@ compatibility.
 
 `config1.db` stores configurations managed by the GUI configuration tool. The
 format is binary protocol buffer of
-[mozc.config.Config](https://github.com/google/mozc/blob/master/src/protocol/config.proto).
+[mozc.config.Config](https://github.com/Team-Hmm/Hizk/blob/master/src/protocol/config.proto).
 
 The following command can decode `config1.db` to text protocol buffer format.
 

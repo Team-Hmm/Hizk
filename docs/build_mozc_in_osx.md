@@ -11,7 +11,7 @@ and make sure the operations before running them.
 ```
 python3 -m pip install requests
 
-git clone https://github.com/google/mozc.git
+git clone https://github.com/Team-Hmm/Hizk.git
 cd mozc/src
 
 python3 build_tools/update_deps.py
@@ -56,7 +56,7 @@ Building on Mac requires the following software.
 You can download Mozc source code as follows:
 
 ```
-git clone https://github.com/google/mozc.git
+git clone https://github.com/Team-Hmm/Hizk.git
 cd mozc/src
 ```
 
@@ -168,7 +168,7 @@ git update-index --no-assume-unchanged src/config.bzl
 
 GitHub Actions steps are already set up in [macos.yaml](../.github/workflows/macos.yaml). With that, you can build and install Mozc with your own commit as follows.
 
-1. Fork https://github.com/google/mozc to your GitHub repository.
+1. Fork https://github.com/Team-Hmm/Hizk to your GitHub repository.
 2. Push a new commit to your own fork.
 3. Click "Actions" tab on your fork.
 4. Wait until the action triggered with your commit succeeds.
@@ -177,7 +177,7 @@ GitHub Actions steps are already set up in [macos.yaml](../.github/workflows/mac
 
 Files in the GitHub Actions page remain available up to 90 days.
 
-You can also find Mozc Installers for macOS in google/mozc repository. Please keep in mind that Mozc is not an officially supported Google product, even if downloaded from https://github.com/google/mozc/.
+You can also find Mozc Installers for macOS in google/mozc repository. Please keep in mind that Mozc is not an officially supported Google product, even if downloaded from https://github.com/Team-Hmm/Hizk/.
 
 1. Sign in GitHub.
 2. Check [recent successfull macOS runs](https://github.com/google/mozc/actions/workflows/macos.yaml?query=is%3Asuccess) in google/mozc repository.

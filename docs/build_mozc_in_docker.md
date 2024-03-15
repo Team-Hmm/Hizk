@@ -245,4 +245,4 @@ Targets only for Bazel:
 ## GYP Build configurations
 
 For the build configurations, please check the previous version.
-https://github.com/google/mozc/blob/2.28.4880.102/docs/build_mozc_in_docker.md#gyp-build-configurations
+https://github.com/Team-Hmm/Hizk/blob/2.28.4880.102/docs/build_mozc_in_docker.md#gyp-build-configurations

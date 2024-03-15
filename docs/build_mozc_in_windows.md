@@ -10,7 +10,7 @@ If you are not sure what the following commands do, please check the description
 ```
 python -m pip install six requests
 
-git clone https://github.com/google/mozc.git
+git clone https://github.com/Team-Hmm/Hizk.git
 cd mozc\src
 
 python build_tools/update_deps.py
@@ -52,7 +52,7 @@ python3 -m pip install six requests
 ### Download the repository from GitHub
 
 ```
-git clone https://github.com/google/mozc.git
+git clone https://github.com/Team-Hmm/Hizk.git
 cd mozc\src
 ```
 
@@ -173,7 +173,7 @@ Note that you can specify `--qtdir=` option instead of `--noqt` in GYP phase sin
 
 GitHub Actions are already set up in [windows.yaml](../.github/workflows/windows.yaml). With that, you can build and install Mozc with your own commit as follows.
 
-1. Fork https://github.com/google/mozc to your GitHub repository.
+1. Fork https://github.com/Team-Hmm/Hizk to your GitHub repository.
 2. Push a new commit to your own fork.
 3. Click "Actions" tab on your fork.
 4. Wait until the action triggered with your commit succeeds.
