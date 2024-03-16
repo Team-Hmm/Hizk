@@ -9,23 +9,26 @@ System Requirements
 LinuxやMacOSでは動作しません。  
 また、ビルド時に十分なストレージ容量が必要となります。  
 
-また、プログラムの仕様上トロイの木馬と同じ挙動をするため、ウイルス対策ソフトによっては誤検知されることがあります。その場合は、ウイルス対策ソフトの設定を変更するか、このソフトウェアを使用しないでください。
+プログラムの仕様上トロイの木馬と同じ挙動をするため、ウイルス対策ソフトによっては誤検知されることがあります。その場合は、ウイルス対策ソフトの設定を変更するか、このソフトウェアを使用しないでください。
 
 How to Use
 -------
-How to Build の章に従いビルドを行ってください。その後生成される.msiファイルを実行してインストールすれば導入完了です。   
+How to Build の章に従いビルドを行ってください。    
+その後生成される.msiファイルを実行してインストールすれば導入完了です。   
+
 Win+SpaceキーでIMEを切り替えて入力をします。変換したい文字列の最後に「。」を入れて変換することで、意味から変換することができます。  
 
-How to BUild
+How to Build
 -------
 1.[OpenAI API key](https://platform.openai.com/api-keys)を取得してください。   
 2.[Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/downloads/#visual-studio-community-2022)をインストールします。この時、以下の項目をインストールするようにしてください。  
 - 「Desktop development with C++」
 - 「Git for Windows」
 - 「Windows11 SDK」    
-3.Python3(3.9以降)をMicrosoft Store等でインストールしてください。
-4.Developer PowerShell for VS 2022を起動してください。今後のコマンドはすべてここで実行してください。
-5.このリポジトリをクローンして、srcディレクトリに移動します。
+
+3.Python3(3.9以降)をMicrosoft Store等でインストールしてください。    
+4.Developer PowerShell for VS 2022を起動してください。今後のコマンドはすべてここで実行してください。    
+5.このリポジトリをクローンして、srcディレクトリに移動します。    
 ```
 git clone https://github.com/Team-Hmm/Hizk.git
 cd mozc\src
