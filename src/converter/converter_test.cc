@@ -856,6 +856,7 @@ TEST_F(ConverterTest, CompletePosIds) {
   for (size_t i = 0; i < std::size(kTestKeys); ++i) {
     Segments segments;
     Segment *seg = segments.add_segment();
+    auto str = kTestKeys[i]:
     seg->set_key(kTestKeys[i]);
     seg->set_segment_type(Segment::FREE);
     ConversionRequest request;

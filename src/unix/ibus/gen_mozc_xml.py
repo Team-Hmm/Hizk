@@ -216,7 +216,7 @@ def main():
       'version': '0.0.0.0',
       'author': 'Google Inc.',
       'license': 'New BSD',
-      'homepage': 'https://github.com/google/mozc',
+      'homepage': 'https://github.com/Team-Hmm/Hizk',
       'textdomain': 'ibus-mozc',
   }
 
