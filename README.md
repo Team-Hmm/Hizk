@@ -34,7 +34,7 @@ git clone https://github.com/Team-Hmm/Hizk.git
 cd mozc\src
 ```
 6.[src\converter\segments.h](src/converter/segments.h)の1行目`YOUR_API_KEY`の部分を、1.で取得したAPIキーに書き換えます。
-7.以下のコマンドを実行して、追加のツール([Ninja 1.11.0](https://github.com/ninja-build/ninja/releases/download/v1.11.0/ninja-win.zip),[Qt 6.6.2](https://download.qt.io/archive/qt/6.6/6.6.2/submodules/qtbase-everywhere-src-6.6.2.tar.xz),[WiX 3.14](https://github.com/wixtoolset/wix3/releases/download/wix314rtm/wix314-binaries.zip),[git submodules](../.gitmodules))を入手します。
+7.以下のコマンドを実行して、追加のツール([Ninja 1.11.0](https://github.com/ninja-build/ninja/releases/download/v1.11.0/ninja-win.zip)・[Qt 6.6.2](https://download.qt.io/archive/qt/6.6/6.6.2/submodules/qtbase-everywhere-src-6.6.2.tar.xz)・[WiX 3.14](https://github.com/wixtoolset/wix3/releases/download/wix314rtm/wix314-binaries.zip)・[git submodules](../.gitmodules))を入手します。
 ```
 python -m pip install six requests
 python build_tools/update_deps.py
