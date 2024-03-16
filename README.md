@@ -1,63 +1,59 @@
-[Mozc - a Japanese Input Method Editor designed for multi-platform](https://github.com/Team-Hmm/Hizk)
+[Hizk - GPT-4搭載の「意味から変換する」次世代IME](https://github.com/Team-Hmm/Hizk)
 ===================================
+Copyright 2010-2024 Google LLC 
+Copyright 2024-2024 kokastar,YukkuriPanda 
 
-Copyright 2010-2024 Google LLC
+System Requirements
+-------
+64bit Windows10以降をサポートします。 
+LinuxやMacOSでは動作しません。
+また、ビルド時に十分なストレージ容量が必要となります。
 
-Mozc is a Japanese Input Method Editor (IME) designed for multi-platform such as
-Android OS, Apple macOS, Chromium OS, GNU/Linux and Microsoft Windows.  This
-OpenSource project originates from
-[Google Japanese Input](http://www.google.com/intl/ja/ime/).
+また、プログラムの仕様上トロイの木馬と同じ挙動をするため、ウイルス対策ソフトによっては誤検知されることがあります。その場合は、ウイルス対策ソフトの設定を変更するか、このソフトウェアを使用しないでください。
 
-Mozc is not an officially supported Google product.
+How to Use
+-------
+How to Build の章に従いビルドを行ってください。その後生成される.msiファイルを実行してインストールすれば導入完了です。 
+Win+SpaceキーでIMEを切り替えて入力をします。変換したい文字列の最後に「。」を入れて変換することで、意味から変換することができます。
 
-Build Status
-------------
-
-| Linux | Windows | macOS | Android lib |
-|:-----:|:-------:|:-----:|:-----------:|
-| [![Linux](https://github.com/google/mozc/actions/workflows/linux.yaml/badge.svg)](https://github.com/google/mozc/actions/workflows/linux.yaml) | [![Windows](https://github.com/google/mozc/actions/workflows/windows.yaml/badge.svg)](https://github.com/google/mozc/actions/workflows/windows.yaml) | [![macOS](https://github.com/google/mozc/actions/workflows/macos.yaml/badge.svg)](https://github.com/google/mozc/actions/workflows/macos.yaml) | [![Android lib](https://github.com/google/mozc/actions/workflows/android.yaml/badge.svg)](https://github.com/google/mozc/actions/workflows/android.yaml) |
-
-
-What's Mozc?
-------------
-For historical reasons, the project name *Mozc* has two different meanings:
-
-1. Internal code name of Google Japanese Input that is still commonly used
-   inside Google.
-2. Project name to release a subset of Google Japanese Input in the form of
-   source code under OSS license without any warranty nor user support.
-
-In this repository, *Mozc* means the second definition unless otherwise noted.
-
-Detailed differences between Google Japanese Input and Mozc are described in [About Branding](docs/about_branding.md).
-
-Build Instructions
-------------------
-
-* [How to build Mozc in Docker](docs/build_mozc_in_docker.md): Android library and Linux desktop builds.
-* [How to build Mozc in macOS](docs/build_mozc_in_osx.md): macOS build.
-* [How to build Mozc in Windows](docs/build_mozc_in_windows.md): Windows build.
-
-Release Plan
-------------
-
-tl;dr. **There is no stable version.**
-
-As described in [About Branding](docs/about_branding.md) page, Google does
-not promise any official QA for OSS Mozc project.  Because of this,
-Mozc does not have a concept of *Stable Release*.  Instead we change version
-number every time when we introduce non-trivial change.  If you are
-interested in packaging Mozc source code, or developing your own products
-based on Mozc, feel free to pick up any version.  They should be equally
-stable (or equally unstable) in terms of no official QA process.
-
-[Release History](docs/release_history.md) page may have additional
-information and useful links about recent changes.
+How to BUild
+-------
+1.[OpenAI API key](https://platform.openai.com/api-keys)を取得してください。 
+2.[Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/downloads/#visual-studio-community-2022)をインストールします。この時、以下の項目をインストールするようにしてください。
+- 「Desktop development with C++」
+- 「Git for Windows」
+- 「Windows11 SDK」
+3.Python3(3.9以降)をMicrosoft Store等でインストールしてください。
+4.Developer PowerShell for VS 2022を起動してください。今後のコマンドはすべてここで実行してください。
+5.このリポジトリをクローンして、srcディレクトリに移動します。
+```
+git clone https://github.com/Team-Hmm/Hizk.git
+cd mozc\src
+```
+6.[src\converter\segments.h](src/converter/segments.h)の1行目`YOUR_API_KEY`の部分を、1.で取得したAPIキーに書き換えます。
+7.以下のコマンドを実行して、追加のツール([Ninja 1.11.0](https://github.com/ninja-build/ninja/releases/download/v1.11.0/ninja-win.zip),[Qt 6.6.2](https://download.qt.io/archive/qt/6.6/6.6.2/submodules/qtbase-everywhere-src-6.6.2.tar.xz),[WiX 3.14](https://github.com/wixtoolset/wix3/releases/download/wix314rtm/wix314-binaries.zip),[git submodules](../.gitmodules))を入手します。
+```
+python -m pip install six requests
+python build_tools/update_deps.py
+```
+8.ビルドシステムのセットアップを行うために以下のコマンドを実行します。
+```
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsamd64_x86.bat"
+```
+9.QtとHizkのビルドを以下のコマンドで行います。
+```
+python build_mozc.py gyp
+python build_mozc.py build -c Release package
+```
+10.以下のコマンドを実行するか、`src\out_win\Release\Mozc64.msi`を実行してインストールします。
+```
+out_win\Release\Mozc64.msi
+```
 
 License
 -------
 
-All Mozc code written by Google is released under
+All Hizk code written by Google & Team-Hmm is released under
 [The BSD 3-Clause License](http://opensource.org/licenses/BSD-3-Clause).
 For third party code under [src/third_party](src/third_party) directory,
 see each sub directory to find the copyright notice.  Note also that
