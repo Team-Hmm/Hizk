@@ -23,8 +23,7 @@ How to Build
 1.[OpenAI API key](https://platform.openai.com/api-keys)を取得してください。   
 2.[Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/downloads/#visual-studio-community-2022)をインストールします。この時、以下の項目をインストールするようにしてください。  
 - 「Desktop development with C++」
-- 「Git for Windows」
-- 「Windows11 SDK」    
+- 「Git for Windows」 
 
 3.Python3(3.9以降)をMicrosoft Store等でインストールしてください。    
 4.Developer PowerShell for VS 2022を起動してください。今後のコマンドはすべてここで実行してください。    
