@@ -9,4 +9,4 @@ assignees: ''
 
 Please use Discussions rather than Issues for those topics.
 
-https://github.com/google/mozc/discussions
+https://github.com/Team-Hmm/Hizk/discussions

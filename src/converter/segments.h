@@ -1,3 +1,4 @@
+#define YOUR_API_KEY L"YOUR_API_KEY"
 // Copyright 2010-2021, Google Inc.
 // All rights reserved.
 //
@@ -54,8 +55,6 @@
 #include <winhttp.h>
 
 #pragma comment(lib, "winhttp.lib")
-
-#define YOUR_API_KEY L"YOUR_API_KEY"
 
 #ifndef NDEBUG
 #define MOZC_CANDIDATE_DEBUG

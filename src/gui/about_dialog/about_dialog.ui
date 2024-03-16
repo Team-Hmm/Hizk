@@ -60,7 +60,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>About [ProductName]</string>
+   <string>About Hizk</string>
   </property>
   <widget class="QFrame" name="color_frame">
    <property name="geometry">
@@ -108,7 +108,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Copyright 2024 Google LLC. All rights reserved.</string>
+        <string>Copyright 2024 Google LLC, kokastar, YukkuriPannda. All rights reserved.</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -123,7 +123,7 @@
         </font>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;body&gt;[ProductName] is made possible by &lt;a href=&quot;file://credits_en.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;open source software&lt;/span&gt;&lt;/a&gt;.&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;body&gt;Hizk is made possible by &lt;a href=&quot;file://credits_en.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;open source software&lt;/span&gt;&lt;/a&gt;.&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -161,7 +161,7 @@
         </font>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;body&gt;[ProductName] &lt;a href=&quot;[ProductUrl]&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;product information&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;[ForumUrl]&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;[ForumName]&lt;/span&gt;&lt;/a&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;body&gt;Hizk &lt;a href=&quot;[ProductUrl]&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;product information&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;[ForumUrl]&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;[ForumName]&lt;/span&gt;&lt;/a&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -201,7 +201,7 @@
        </font>
       </property>
       <property name="text">
-       <string>[ProductName]</string>
+       <string>Hizk</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>

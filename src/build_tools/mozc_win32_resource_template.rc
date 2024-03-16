@@ -19,7 +19,7 @@
   #if defined(GOOGLE_JAPANESE_INPUT_BUILD)
     #define MOZC_RES_LEGAL_COPYRIGHT "Copyright 2024 Google LLC. All Rights Reserved."
   #elif defined(MOZC_BUILD)
-    #define MOZC_RES_LEGAL_COPYRIGHT "Copyright 2024 Google LLC. All Rights Reserved."
+    #define MOZC_RES_LEGAL_COPYRIGHT "Copyright 2024 Google LLC, kokastar, YukkuriPannda. All rights reserved.."
   #endif
 #endif
 #ifndef MOZC_RES_ORIGINAL_FILENAME

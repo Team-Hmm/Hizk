@@ -108,7 +108,7 @@ END
   #if defined(GOOGLE_JAPANESE_INPUT_BUILD)
     #define MOZC_RES_FILE_DESCRIPTION "Google 日本語入力 TIP モジュール"
   #elif defined(MOZC_BUILD)
-    #define MOZC_RES_FILE_DESCRIPTION "Mozc TIP Module"
+    #define MOZC_RES_FILE_DESCRIPTION "Hizk TIP Module"
   #endif
 #endif
 #ifndef MOZC_RES_FILETYPE
@@ -130,8 +130,8 @@ BEGIN
     IDS_IME_DISPLAYNAME     "Google 日本語入力"
     IDS_TEXTSERVICE_DISPLAYNAME_SYNONYM  "Google 日本語入力"
 #else
-    IDS_IME_DISPLAYNAME     "Mozc"
-    IDS_TEXTSERVICE_DISPLAYNAME_SYNONYM  "Mozc"
+    IDS_IME_DISPLAYNAME     "Hizk"
+    IDS_TEXTSERVICE_DISPLAYNAME_SYNONYM  "Hizk"
 #endif
     IDS_INPUTMODE           "入力モード"
     IDS_WIN8_TRAY_ITEM      "右クリックで IME のオプションを表示します"
@@ -146,7 +146,7 @@ BEGIN
 #if defined(GOOGLE_JAPANESE_INPUT_BUILD)
     IDS_ABOUT               "Google 日本語入力について"
 #else
-    IDS_ABOUT               "Mozc について"
+    IDS_ABOUT               "Hizk について"
 #endif
     IDS_FULL_KATAKANA       "全角カタカナ"
     IDS_HALF_ALPHANUMERIC   "半角英数"
@@ -160,10 +160,10 @@ BEGIN
     IDS_CANDIDATE_WINDOW             "Google 日本語入力 候補ウィンドウ"
     IDS_INDICATOR_WINDOW             "Google 日本語入力 インジケータ ウィンドウ"
 #else
-    IDS_UNOBSERVABLE_SUGGEST_WINDOW  "Mozc サジェストウィンドウ"
-    IDS_OBSERVABLE_SUGGEST_WINDOW    "Mozc サジェスト候補ウィンドウ"
-    IDS_CANDIDATE_WINDOW             "Mozc 候補ウィンドウ"
-    IDS_INDICATOR_WINDOW             "Mozc インジケータ ウィンドウ"
+    IDS_UNOBSERVABLE_SUGGEST_WINDOW  "Hizk サジェストウィンドウ"
+    IDS_OBSERVABLE_SUGGEST_WINDOW    "Hizk サジェスト候補ウィンドウ"
+    IDS_CANDIDATE_WINDOW             "Hizk 候補ウィンドウ"
+    IDS_INDICATOR_WINDOW             "Hizk インジケータ ウィンドウ"
 #endif
 END
 
@@ -173,8 +173,8 @@ BEGIN
     IDS_IME_DISPLAYNAME     "Google Japanese Input"
     IDS_TEXTSERVICE_DISPLAYNAME_SYNONYM  "Google Japanese Input"
 #else
-    IDS_IME_DISPLAYNAME     "Mozc"
-    IDS_TEXTSERVICE_DISPLAYNAME_SYNONYM  "Mozc"
+    IDS_IME_DISPLAYNAME     "Hizk"
+    IDS_TEXTSERVICE_DISPLAYNAME_SYNONYM  "Hizk"
 #endif
     IDS_INPUTMODE           "Input Mode"
     IDS_WIN8_TRAY_ITEM      "Right click to show IME options"
@@ -189,7 +189,7 @@ BEGIN
 #if defined(GOOGLE_JAPANESE_INPUT_BUILD)
     IDS_ABOUT               "About Google Japanese Input"
 #else
-    IDS_ABOUT               "About Mozc"
+    IDS_ABOUT               "About Hizk"
 #endif
     IDS_FULL_KATAKANA       "Full-width Katakana"
     IDS_HALF_ALPHANUMERIC   "Half-width Alphanumeric"
@@ -202,9 +202,9 @@ BEGIN
     IDS_OBSERVABLE_SUGGEST_WINDOW    "Google Japanese Input Suggestion Candidate Window"
     IDS_CANDIDATE_WINDOW             "Google Japanese Input Candidate Window"
 #else
-    IDS_UNOBSERVABLE_SUGGEST_WINDOW  "Mozc Suggestion Window"
-    IDS_OBSERVABLE_SUGGEST_WINDOW    "Mozc Suggestion Candidate Window"
-    IDS_CANDIDATE_WINDOW             "Mozc Candidate Window"
+    IDS_UNOBSERVABLE_SUGGEST_WINDOW  "Hizk Suggestion Window"
+    IDS_OBSERVABLE_SUGGEST_WINDOW    "Hizk Suggestion Candidate Window"
+    IDS_CANDIDATE_WINDOW             "Hizk Candidate Window"
 #endif
 END
 
